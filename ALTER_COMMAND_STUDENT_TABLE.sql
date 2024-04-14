@@ -1,0 +1,36 @@
+/*
+ALTER Table
+The ALTER TABLE statement is used to add, delete, or modify columns 
+in an existing table
+*/
+
+/*
+• ALTER TABLE - ADD Column Syntax
+ALTER TABLE table_name
+ADD COLUMN column_name ;
+*/
+ALTER TABLE STUDENT
+ADD COLUMN "SEMAIL" VARCHAR(255);
+SELECT * FROM STUDENT
+
+
+/*
+• ALTER TABLE - DROP COLUMN Syntax
+ALTER TABLE table_name
+DROP COLUMN column_name;
+*/
+ALTER TABLE STUDENT 
+DROP COLUMN "SEMAIL";
+SELECT*FROM STUDENT
+
+
+
+
+/*
+• ALTER TABLE - ALTER/MODIFY COLUMN Syntax
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype;
+*/
+ALTER TABLE STUDENT
+ALTER COLUMN "SID" TYPE SMALLINT;
+SELECT*FROM STUDENT
